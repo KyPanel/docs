@@ -1,0 +1,7 @@
+[
+  { "title": "Getting started", "pages": ["index", "requirements", "install", "first-steps", "license", "updates"] },
+  { "title": "Server administration", "pages": ["admin/accounts", "admin/packages", "admin/resellers", "admin/dns", "admin/email", "admin/php", "admin/ssl", "admin/security", "admin/backups", "admin/import", "admin/server-transfer", "admin/nodes", "admin/server", "admin/notifications"] },
+  { "title": "Customer panel", "pages": ["user/overview", "user/email", "user/files", "user/databases", "user/domains", "user/security", "user/software", "user/apps", "user/advanced", "user/metrics", "user/webmail", "user/connected-apps"] },
+  { "title": "Developers", "pages": ["developers/api", "developers/cli", "developers/webhooks", "developers/sso", "developers/billing"] },
+  { "title": "Reference", "pages": ["reference/ports", "reference/paths", "reference/isolation", "reference/troubleshooting", "reference/faq"] }
+]
