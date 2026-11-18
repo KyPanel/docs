@@ -17,7 +17,7 @@ KyPanel is a hosting control panel for Linux servers. One install gives you web 
 ## Where to start
 
 - **New server:** check the [requirements](/requirements/), run the [one-line installer](/install/) and follow [first steps](/first-steps/).
-- **Moving from another panel:** [import tools](/admin/import/) restore cPanel backups and copy accounts from a running cPanel server over SSH.
+- **Moving from another panel:** [import tools](/admin/import/) convert cPanel and HestiaCP backups into KyPanel backups and restore them.
 - **Moving to a new server:** the [KyPanel Server Transfer](/admin/server-transfer/) copies a whole server, settings and accounts included, to another one.
 - **Hosting customers:** the [customer panel guide](/user/overview/) covers email, files, databases, domains, apps and security.
 - **Automation:** the [API](/developers/api/), the [`ky` command line](/developers/cli/), [webhooks](/developers/webhooks/) and [single sign-on](/developers/sso/) connect KyPanel to billing systems and scripts. The [API reference](/api/) lists all operations.

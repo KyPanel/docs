@@ -48,12 +48,20 @@ Restores run as background jobs with their log.
 
 ## Customers' own backups
 
-In their panel (**Files › Backup**), customers can:
+In their panel (**Files › Backups**), customers can:
 
-- download a **full backup** of their account (generated on request);
+- make a **full backup** of their account (saved in their home or sent to their FTP/SFTP server);
 - download their home folder, a database, a domain's forwarders or their email filters;
 - upload a partial backup to restore it;
-- browse the server's backups of their account and **restore files** or folders from them.
+- browse the server's backups of their account and **restore files** or folders from them;
+- **restore parts** of a KyPanel backup (the files, a mailbox, a database, an app, DNS, SSL, cron jobs, keys and connections…) and leave the rest of the account as it is, or restore the whole account;
+- convert a backup from another panel in **Files › Convert Backup** (see [import tools](/admin/import/)).
+
+KyPanel restores only KyPanel backups; any other file is refused as an invalid backup.
+
+### Keys and connections
+
+Backups include the account's keys and connections by default: the Cloudflare and GitHub connections, API tokens, two-factor, passkeys, webhooks, contact channels and app secrets (webhook secret, Composer credentials, deploy hook). A restore on another server then works without connecting everything again. Turn it off in **Backup › What goes in** (server backups) or when making a full backup (customers). The archive isn't encrypted: keep backups somewhere safe. GitHub connections need the same GitHub App on the new server, and passkeys work only on the same panel address.
 
 ## Before updates
 
