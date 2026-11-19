@@ -39,7 +39,7 @@ description: Short answers to common questions.
 
 ## Moving
 
-**Can I move accounts from cPanel or HestiaCP?** Yes: convert the account backups in Convert Backup, then restore them in Backup Import. Mail, databases, DNS and the passwords in formats KyPanel uses come along. See [import tools](/admin/import/).
+**Can I move accounts from cPanel or HestiaCP?** Yes: convert the account backups in Convert Backup; they're restored right after (or later, in Backup Import). Mail, databases, DNS and the passwords in formats KyPanel uses come along. See [import tools](/admin/import/).
 
 **How do I move to a bigger server?** Install KyPanel on the new server and run the [KyPanel Server Transfer](/admin/server-transfer/) from there: settings, accounts, Cloudflare and GitHub connections and API tokens come along, and the DNS records get the new addresses. The old server keeps running until you switch.
 

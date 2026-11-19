@@ -30,6 +30,8 @@ A password in a format KyPanel doesn't use is left out, with a note: that login 
 
 Upload the backup, or point to a file on this server (for example one the old server copied to `/home`). The KyPanel backup is written to `/home` as `backup-DATE_USER.tar.gz` and shows up in **Backup Import**.
 
+**Restore after converting** (on by default) imports it right away: the page opens the import's report, and the account is created as soon as the analysis finds no conflict. With a conflict (a username or domain already taken, for example) the import waits for you in the report. Unchecked, the backup just waits in Backup Import.
+
 ### From Hestia
 
 Hestia has no main domain: the oldest website that isn't a subdomain of another one becomes it, the other websites become addon domains or subdomains, and each alias stays an alias of its own website (`www.` aliases aren't needed here). Files keep Hestia's paths (`~/web/DOMAIN/public_html`), so the sites' configurations still work. Extra FTP logins become `LOGIN@DOMAIN`. A mail or DNS domain without a website gets an empty one. Not converted: PostgreSQL databases, and Hestia's web templates (sites use this server's web settings).
