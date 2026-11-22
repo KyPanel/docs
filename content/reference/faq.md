@@ -35,11 +35,23 @@ description: Short answers to common questions.
 
 **Can mail run on another server?** Yes, with a [mail node](/admin/nodes/).
 
+**Can my support staff have their own logins?** Not yet. Ky Admin has one administrator login, with two-factor
+authentication; scripts and billing systems use [API tokens](/developers/), which can be limited to some areas.
+Resellers have their own logins for their own accounts.
+
+**Does it work with CloudLinux and Imunify360?** KyPanel installs on CloudLinux 8, 9 and 10 and, when it's there, sets
+each account's limits through CloudLinux's LVE; the CloudLinux license stays yours. Imunify360 isn't integrated.
+
 **Is there a DNS cluster?** Zones are served by this server's DNS; customers can also publish them to [Cloudflare](/user/domains/#cloudflare).
 
 ## Moving
 
 **Can I move accounts from cPanel, Plesk, DirectAdmin or other panels?** Yes: convert the account backups in Convert Backup; they're restored right after (or later, in Backup Import). Mail, databases, DNS and the passwords in formats KyPanel uses come along. See [import tools](/admin/import/).
+
+**What do my customers notice after the move?** Their sites, mail and databases keep working with the same passwords
+when the old panel stored them in a format KyPanel uses; any other login gets a new password, listed in the restore's
+notes. They sign in at `panel.<their domain>` (or the server's address) and read webmail at `webmail.<their domain>`.
+Bookmarks to the old panel's address stop working. Lower the DNS TTL a day before moving so the switch is quick.
 
 **How do I move to a bigger server?** Install KyPanel on the new server and run the [KyPanel Server Transfer](/admin/server-transfer/) from there: settings, accounts, Cloudflare and GitHub connections and API tokens come along, and the DNS records get the new addresses. The old server keeps running until you switch.
 
