@@ -9,6 +9,9 @@ The app never gets your password: you sign in on the panel's own page and allow 
 
 ## Connect an app
 
+The address below is KyPanel's gateway: it sends you to your own server's sign-in and then relays each request and
+answer between the app and your server, without storing them. Your password never passes through it.
+
 Add a **custom connector** with the address:
 
 ```

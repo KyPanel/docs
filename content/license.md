@@ -12,7 +12,7 @@ description: Trial, pricing and what happens when a license lapses.
 ## Buy a license
 
 1. In Ky Admin open **Server Configuration › License** and click **Register this server**. It opens the client area with the server's IP filled in. You can also go to [my.kypanel.com](https://my.kypanel.com/) and choose **Add a server**.
-2. Choose monthly or yearly and pay by card. Buying during the free trial doesn't cost the days left: the license is active right away and the first charge is on the day the trial ends. You can add your company's tax ID at checkout to have it on the invoices.
+2. Choose monthly or yearly and pay by card. Buying during the free trial doesn't cost the days left: the license is active right away and the first charge is on the day the trial ends. Outside the US, you can add your company's tax ID at checkout to have it on the invoices.
 3. Back in the panel, click **Check now**. The status turns to **Active**. Without clicking, the server picks it up on its own within about 10 minutes (a server on a trial checks in that often; a licensed one twice a day).
 
 Invoices, cards and cancellations are in the client area under **Billing**.
@@ -29,6 +29,7 @@ The license is bound to the IP. If the server's main IP changes, or you move to 
 | Active | Paid. The server holds a signed lease, renewed at every check-in. |
 | Grace | The server couldn't reach the license server when the lease ran out (a network problem, not a payment problem). 14 more days, fully working; administrators are notified. |
 | Read-only | Trial over without a license, grace over, or the license was canceled. |
+| Payment failed | A renewal the card didn't pay. The license stays active for 14 days while Stripe retries, and the buyer gets an email the same day with the date. |
 
 ## Read-only mode
 
@@ -42,4 +43,4 @@ As soon as the license is active again, click **Check now** and the panel is wri
 
 ## What the check-in sends
 
-The server's IP, hostname and KyPanel version, signed with a key unique to the install. Never your customers' data.
+The server's IP, hostname and KyPanel version, signed with a key unique to the install. Never your customers' data. (Apps you connect through mcp.kypanel.com are the one exception: see [connected apps](/user/connected-apps/).)
