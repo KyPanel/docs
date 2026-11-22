@@ -31,7 +31,7 @@ Download a full backup of the account, or parts of it (home folder, a database, 
 
 **Restore** (Files › Backups) brings back a KyPanel backup: one of the server's backups, an uploaded file, or a file in your home. Choose the parts you want (the files, a mailbox, a database, an app, DNS, SSL, cron jobs, keys and connections…) and the rest of the account stays as it is, or restore the whole account, which replaces what's in it now, keeps your username and plan, and can't claim a domain already hosted here by another account. Full backups include the account's keys and connections (Cloudflare, GitHub, API tokens, two-factor, webhooks, app secrets) unless you untick that option: keep the file somewhere safe.
 
-**Convert Backup** (Files › Convert Backup) is for moving in from another host: convert the backup of your old account (cPanel or HestiaCP; upload it, or have the old panel send it to your home over FTP or SSH) and a KyPanel backup is saved in your home. With **Restore after converting** (on by default), the list of what's in the backup opens when it's done: everything is checked, uncheck what you don't want and click **Restore**. Any other file is refused as an invalid backup.
+**Convert Backup** (Files › Convert Backup) is for moving in from another host: convert the backup of your old account (cPanel, Plesk, DirectAdmin, HestiaCP, VestaCP, aaPanel, CyberPanel or Virtualmin; upload it, or have the old panel send it to your home over FTP or SSH) and a KyPanel backup is saved in your home. With **Restore after converting** (on by default), the list of what's in the backup opens when it's done: everything is checked, uncheck what you don't want and click **Restore**. Any other file is refused as an invalid backup.
 
 ## Permissions
 

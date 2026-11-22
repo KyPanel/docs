@@ -17,7 +17,7 @@ description: Short answers to common questions.
 
 **Can I install on a server that already hosts sites?** No. Use a fresh server and [import](/admin/import/) the accounts.
 
-**Which distribution should I choose?** Any supported one works the same. AlmaLinux 9 or 10 and Ubuntu 24.04 are the most common choices.
+**Which distribution should I choose?** Any supported one works the same, and every release is tested on all of them. With no preference, AlmaLinux 10 gets updates from its vendor the longest.
 
 **Does it support ARM servers?** Not yet: x86_64 only. The [ky CLI](/developers/cli/) runs on ARM.
 
@@ -39,7 +39,7 @@ description: Short answers to common questions.
 
 ## Moving
 
-**Can I move accounts from cPanel or HestiaCP?** Yes: convert the account backups in Convert Backup; they're restored right after (or later, in Backup Import). Mail, databases, DNS and the passwords in formats KyPanel uses come along. See [import tools](/admin/import/).
+**Can I move accounts from cPanel, Plesk, DirectAdmin or other panels?** Yes: convert the account backups in Convert Backup; they're restored right after (or later, in Backup Import). Mail, databases, DNS and the passwords in formats KyPanel uses come along. See [import tools](/admin/import/).
 
 **How do I move to a bigger server?** Install KyPanel on the new server and run the [KyPanel Server Transfer](/admin/server-transfer/) from there: settings, accounts, Cloudflare and GitHub connections and API tokens come along, and the DNS records get the new addresses. The old server keeps running until you switch.
 

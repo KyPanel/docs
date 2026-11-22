@@ -14,7 +14,7 @@ curl -fsSL https://updates.kypanel.com/install.sh | bash
 The installer downloads the current release, checks its signature and checksum, updates the operating system, installs and configures every service, opens the firewall and prints the first login:
 
 ```text
-[kypanel] ready: https://server1.example.com:7711  (version 1.0.0)
+[kypanel] ready: https://server1.example.com:7711  (version 0.2.0)
 
   First panel login
   user:     root
@@ -29,13 +29,13 @@ It takes 10 to 25 minutes, depending on the server and the mirrors. A first inst
 Pass options after `bash -s --`:
 
 ```sh
-curl -fsSL https://updates.kypanel.com/install.sh | bash -s -- --hostname server1.example.com --channel beta
+curl -fsSL https://updates.kypanel.com/install.sh | bash -s -- --hostname server1.example.com
 ```
 
 | Option | Meaning |
 |---|---|
 | `--hostname NAME` | The server's hostname (full domain name). Default: the current hostname. |
-| `--channel NAME` | Release channel: `beta` (default), `edge` or `stable`. See [updates](/updates/). |
+| `--channel NAME` | Release channel: `stable` (default) or `beta`. See [updates](/updates/). |
 | `--role ROLE` | What this server does: `all` (default), `web`, `mail` or `database`. See below. |
 | `--node-host NAME` | For a node: the address the panel reaches it at (default: the hostname). |
 | `--force` | Install on a system that isn't on the supported list. |

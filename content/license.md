@@ -12,8 +12,8 @@ description: Trial, pricing and what happens when a license lapses.
 ## Buy a license
 
 1. In Ky Admin open **Server Configuration › License** and click **Register this server**. It opens the client area with the server's IP filled in. You can also go to [my.kypanel.com](https://my.kypanel.com/) and choose **Add a server**.
-2. Choose monthly or yearly and pay by card.
-3. Back in the panel, click **Check now**. The status turns to **Active**. Without clicking, the server picks the license up at its next check-in (every 12 hours).
+2. Choose monthly or yearly and pay by card. Buying during the free trial doesn't cost the days left: the license is active right away and the first charge is on the day the trial ends. You can add your company's tax ID at checkout to have it on the invoices.
+3. Back in the panel, click **Check now**. The status turns to **Active**. Without clicking, the server picks it up on its own within about 10 minutes (a server on a trial checks in that often; a licensed one twice a day).
 
 Invoices, cards and cancellations are in the client area under **Billing**.
 
@@ -27,7 +27,7 @@ The license is bound to the IP. If the server's main IP changes, or you move to 
 |---|---|
 | Trial | First 30 days. Fully working. |
 | Active | Paid. The server holds a signed lease, renewed at every check-in. |
-| Grace | The server couldn't reach the license server when the lease ran out. 14 more days, fully working; administrators are notified. |
+| Grace | The server couldn't reach the license server when the lease ran out (a network problem, not a payment problem). 14 more days, fully working; administrators are notified. |
 | Read-only | Trial over without a license, grace over, or the license was canceled. |
 
 ## Read-only mode

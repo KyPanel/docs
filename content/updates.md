@@ -11,8 +11,10 @@ Settings: **Server Configuration › Update Preferences**.
 
 | Setting | |
 |---|---|
-| Channel | **Edge** gets every release first. **Beta** (default) gets releases after they've run on edge. **Stable** gets them after beta. |
-| Automatic | On by default. The server checks every 6 hours (every 10 minutes on edge) and installs new releases. Off: you get a notification and install with **Update now**. |
+| Channel | **Stable** (default) gets a release once it has run on beta. **Beta** gets each release first. |
+| Automatic | On by default. The server checks every 6 hours and installs new releases. Off: you get a notification and install with **Update now**. |
+
+Releases are numbered (0.2.0, 0.2.1); the same release, with the same package, moves from beta to stable. What's new in each one is in the [changelog](/changelog/) and shows in **Server Configuration › Update Preferences** before you install it. Which versions get fixes: [support policy](/support-policy/).
 
 Every release is signed by KyPanel; the server checks the signature and the package checksum before anything runs. An update:
 
@@ -49,8 +51,8 @@ Customers' own software (WordPress, plugins, an app's dependencies) is theirs to
 PHP, nginx, MariaDB, PowerDNS, Dovecot and Rspamd don't come straight from their vendors: servers install them from
 KyPanel's mirror at `updates.kypanel.com/repo`, which publishes the vendors' packages (with the vendors' own signatures)
 as tested snapshots, signed by KyPanel. A new vendor version reaches your servers once KyPanel has installed it on
-every supported distribution. The mirror follows the panel's channel: **edge** and **beta** servers get a snapshot first,
-**stable** servers after it passed.
+every supported distribution. The mirror follows the panel's channel: **beta** servers get a snapshot first, **stable** servers after it
+passed.
 
 If the mirror can't be reached during an install, the vendors' repositories are used instead.
 
